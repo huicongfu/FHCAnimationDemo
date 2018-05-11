@@ -15,6 +15,7 @@
 		5DEB4E7920A58E2100C0670C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB4E7820A58E2100C0670C /* main.m */; };
 		5DEB4E8320A58E2100C0670C /* FHCAnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB4E8220A58E2100C0670C /* FHCAnimationDemoTests.m */; };
 		5DEB4E8E20A58E2100C0670C /* FHCAnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB4E8D20A58E2100C0670C /* FHCAnimationDemoUITests.m */; };
+		5DEB4E9F20A5940D00C0670C /* CircleReplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB4E9E20A5940D00C0670C /* CircleReplicatorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5DEB4E8920A58E2100C0670C /* FHCAnimationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FHCAnimationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DEB4E8D20A58E2100C0670C /* FHCAnimationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FHCAnimationDemoUITests.m; sourceTree = "<group>"; };
 		5DEB4E8F20A58E2100C0670C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DEB4E9D20A5940D00C0670C /* CircleReplicatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleReplicatorViewController.h; sourceTree = "<group>"; };
+		5DEB4E9E20A5940D00C0670C /* CircleReplicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleReplicatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		5DEB4E6820A58E2100C0670C /* FHCAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5DEB4E9B20A58ECA00C0670C /* DemoVC */,
 				5DEB4E6920A58E2100C0670C /* AppDelegate.h */,
 				5DEB4E6A20A58E2100C0670C /* AppDelegate.m */,
 				5DEB4E6C20A58E2100C0670C /* ViewController.h */,
@@ -130,6 +134,23 @@
 				5DEB4E8F20A58E2100C0670C /* Info.plist */,
 			);
 			path = FHCAnimationDemoUITests;
+			sourceTree = "<group>";
+		};
+		5DEB4E9B20A58ECA00C0670C /* DemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB4E9C20A593F100C0670C /* replicator */,
+			);
+			path = DemoVC;
+			sourceTree = "<group>";
+		};
+		5DEB4E9C20A593F100C0670C /* replicator */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB4E9D20A5940D00C0670C /* CircleReplicatorViewController.h */,
+				5DEB4E9E20A5940D00C0670C /* CircleReplicatorViewController.m */,
+			);
+			path = replicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +288,7 @@
 			files = (
 				5DEB4E6E20A58E2100C0670C /* ViewController.m in Sources */,
 				5DEB4E7920A58E2100C0670C /* main.m in Sources */,
+				5DEB4E9F20A5940D00C0670C /* CircleReplicatorViewController.m in Sources */,
 				5DEB4E6B20A58E2100C0670C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UAXX29R9ZX;
 				INFOPLIST_FILE = FHCAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.shouzhi.FHCAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UAXX29R9ZX;
 				INFOPLIST_FILE = FHCAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.shouzhi.FHCAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
